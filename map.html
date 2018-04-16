@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Revive Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="revive.css"/>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /*Makes the  page fill the window. */
+      html, body {
+        height: 95%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 42.5972563, lng: -82.8779754},
+          zoom: 14
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 42.5972563, lng: -82.8779754},
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:42.5981102,lng:-82.87746429},
+          map: map
+        });
+      }
+    </script>
+
+    <!-- Scrolling Text-->       
+    <div class="scrolling">
+        <h3> Remember to Call 911 </h3>
+        </div>
+       
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCbk4Zpo4kmcpfmiD2q4Mw7mH8ieW-TyR4&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
