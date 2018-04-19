@@ -13,6 +13,10 @@ body, html {
     color: #777;
     line-height: 1.8;
 }
+li::first-letter{
+  font-size: 150%;
+  color: black;
+}
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -52,13 +56,12 @@ body, html {
 </style>
 <body>
 
-<!-- Navbar (sit on top) 
+ <!--Navbar (sit on top) 
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="map.html">
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#MAP" class="w3-bar-item w3-button">MAP</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -79,20 +82,20 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Revive<span class="w3-hide-small"></span>Me</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <a href="map.html">Revive</a><span class="w3-hide-small"> <a href="map.html">Me</a></span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">REVIVE ME</h3>
+  <h3 class="w3-center"> REVIVE ME</h3>
   <p class="w3-center"><strong>The App Created to Locate Life Saving Interventions</strong></p>
   <p> According to the Michgan Governor, Rick Snyder's <a href="http://www.michigan.gov/snyder/0,4668,7-277-73341_73343-460518--,00.html">offical website</a> Michigan has seen an increase in opioid-related deaths. From 1999 to 2016, 7,300 people have died from an opioid overdose with more than 60 percent of those deaths occurring since 2010. 
     In response to these devastating facts a standing order for <a href="http://www.michigan.gov/mdhhs/0,5885,7-339-71550_2941_4871_79584_79585_79587_79591---,00.html"> Naloxone</a> was authorized in Michigan. Meaning this intervention can be purchased with-out a prescription. Lt. Gov. Brian Calley announced pharmacies have dispensed 1,838 potentially life-saving orders of the medication.
     “As we continue our fight against opioid addiction, this order makes <a href="http://www.michigan.gov/mdhhs/0,5885,7-339-71550_2941_4871_79584_79585_79587_79591---,00.html"> Naloxone</a> more accessible for those most likely to need it,” Lt. Gov. Brian Calley. 
   </p>
   <h3 class="w3-center">HOW REVIVE ME WORKS</h3>
-  <div class="container">
+  <div class="container" id="howitworks">
     <ul>
         <li>Get a life-saving <a href="http://www.michigan.gov/mdhhs/0,5885,7-339-71550_2941_4871_79584_79585_79587_79591---,00.html"> Naloxone</a> kit</li>
         <li>Provide the location of your kit</li>
